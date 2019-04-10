@@ -12,6 +12,8 @@
     "keystone-email": "^1.1.0",
     "lodash": "^4.13.1",
     "moment": "^2.24.0",
+    "node-sass": "^4.11.0",
+    "node-sass-middleware": "^0.11.0",
     "pug": "^2.0.3"
   },
   "devDependencies": {

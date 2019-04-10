@@ -28,11 +28,190 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="config\resmsg.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="keystone.js" />
+    <Compile Include="models\Permission.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="models\Role.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="models\Post.js" />
+    <Compile Include="models\User.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="public\js\bootstrap\affix.js" />
+    <Compile Include="public\js\bootstrap\alert.js" />
+    <Compile Include="public\js\bootstrap\bootstrap-3.3.5.js" />
+    <Compile Include="public\js\bootstrap\bootstrap-3.3.5.min.js" />
+    <Compile Include="public\js\bootstrap\button.js" />
+    <Compile Include="public\js\bootstrap\carousel.js" />
+    <Compile Include="public\js\bootstrap\collapse.js" />
+    <Compile Include="public\js\bootstrap\dropdown.js" />
+    <Compile Include="public\js\bootstrap\modal.js" />
+    <Compile Include="public\js\bootstrap\npm.js" />
+    <Compile Include="public\js\bootstrap\popover.js" />
+    <Compile Include="public\js\bootstrap\scrollspy.js" />
+    <Compile Include="public\js\bootstrap\tab.js" />
+    <Compile Include="public\js\bootstrap\tooltip.js" />
+    <Compile Include="public\js\bootstrap\transition.js" />
+    <Compile Include="public\js\jquery\jquery-1.11.3.js" />
+    <Compile Include="public\js\jquery\jquery-1.11.3.min.js" />
+    <Compile Include="public\js\jquery\jquery-2.1.4.js" />
+    <Compile Include="public\js\jquery\jquery-2.1.4.min.js" />
+    <Compile Include="routes\apis\csrf.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="routes\emails.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="routes\index.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="routes\middleware.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="routes\params.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="routes\views\chat.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="routes\views\home.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="updates\0.0.1-init.js" />
     <Content Include=".env" />
     <Content Include=".gitignore" />
     <Content Include="package.json" />
+    <Content Include="public\favicon.ico" />
+    <Content Include="public\fonts\bootstrap\glyphicons-halflings-regular.eot" />
+    <Content Include="public\fonts\bootstrap\glyphicons-halflings-regular.svg" />
+    <Content Include="public\fonts\bootstrap\glyphicons-halflings-regular.ttf" />
+    <Content Include="public\fonts\bootstrap\glyphicons-halflings-regular.woff" />
+    <Content Include="public\fonts\bootstrap\glyphicons-halflings-regular.woff2" />
+    <Content Include="public\images\logo-email.gif" />
+    <Content Include="public\images\logo.svg" />
+    <Content Include="public\styles\bootstrap\bootstrap\mixins\_alerts.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\mixins\_background-variant.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\mixins\_buttons.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\mixins\_center-block.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\mixins\_forms.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\mixins\_gradients.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\mixins\_grid-framework.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\mixins\_grid.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\mixins\_hide-text.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\mixins\_image.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\mixins\_labels.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\mixins\_list-group.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\mixins\_nav-divider.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\mixins\_nav-vertical-align.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\mixins\_opacity.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\mixins\_pagination.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\mixins\_panels.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\mixins\_progress-bar.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\mixins\_reset-filter.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\mixins\_reset-text.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\mixins\_resize.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\mixins\_responsive-visibility.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\mixins\_size.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\mixins\_tab-focus.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\mixins\_table-row.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\mixins\_text-emphasis.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\mixins\_text-overflow.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\mixins\_vendor-prefixes.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\_alerts.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\_badges.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\_breadcrumbs.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\_button-groups.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\_buttons.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\_carousel.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\_close.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\_code.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\_component-animations.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\_dropdowns.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\_forms.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\_glyphicons.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\_grid.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\_input-groups.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\_jumbotron.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\_labels.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\_list-group.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\_media.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\_mixins.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\_modals.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\_navbar.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\_navs.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\_normalize.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\_pager.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\_pagination.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\_panels.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\_popovers.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\_print.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\_progress-bars.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\_responsive-embed.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\_responsive-utilities.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\_scaffolding.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\_tables.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\_theme.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\_thumbnails.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\_tooltip.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\_type.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\_utilities.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\_variables.scss" />
+    <Content Include="public\styles\bootstrap\bootstrap\_wells.scss" />
+    <Content Include="public\styles\bootstrap\_bootstrap-compass.scss" />
+    <Content Include="public\styles\bootstrap\_bootstrap-mincer.scss" />
+    <Content Include="public\styles\bootstrap\_bootstrap-sprockets.scss" />
+    <Content Include="public\styles\bootstrap\_bootstrap.scss" />
+    <Content Include="public\styles\chat.css" />
+    <Content Include="public\styles\site.css" />
+    <Content Include="public\styles\site.scss" />
+    <Content Include="public\styles\site\_layout.scss" />
+    <Content Include="public\styles\site\_variables.scss" />
     <Content Include="README.md" />
+    <Content Include="seed\permission.json">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="seed\role.json" />
+    <Content Include="seed\post.json" />
+    <Content Include="seed\user.json" />
+    <Content Include="templates\emails\test.pug" />
+    <Content Include="templates\layouts\default.pug" />
+    <Content Include="templates\mixins\flash-messages.pug" />
+    <Content Include="templates\views\chat.pug" />
+    <Content Include="templates\views\error.pug" />
+    <Content Include="templates\views\index.pug" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="models\" />
+    <Folder Include="config\" />
+    <Folder Include="public\fonts\" />
+    <Folder Include="public\fonts\bootstrap\" />
+    <Folder Include="public\images\" />
+    <Folder Include="public\js\" />
+    <Folder Include="public\js\bootstrap\" />
+    <Folder Include="public\js\jquery\" />
+    <Folder Include="public\styles\" />
+    <Folder Include="public\styles\bootstrap\" />
+    <Folder Include="public\styles\bootstrap\bootstrap\" />
+    <Folder Include="public\styles\bootstrap\bootstrap\mixins\" />
+    <Folder Include="public\styles\site\" />
+    <Folder Include="routes\apis\" />
+    <Folder Include="routes\views\" />
+    <Folder Include="templates\" />
+    <Folder Include="templates\emails\" />
+    <Folder Include="templates\layouts\" />
+    <Folder Include="templates\mixins\" />
+    <Folder Include="templates\views\" />
+    <Folder Include="updates\" />
+    <Folder Include="public\" />
+    <Folder Include="seed\" />
+    <Folder Include="routes\" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
