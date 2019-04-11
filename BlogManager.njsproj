@@ -61,6 +61,7 @@
     <Compile Include="public\js\jquery\jquery-1.11.3.min.js" />
     <Compile Include="public\js\jquery\jquery-2.1.4.js" />
     <Compile Include="public\js\jquery\jquery-2.1.4.min.js" />
+    <Compile Include="routes\apis\auth.js" />
     <Compile Include="routes\apis\csrf.js">
       <SubType>Code</SubType>
     </Compile>
@@ -79,6 +80,7 @@
     <Compile Include="routes\views\chat.js">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="routes\views\signup.js" />
     <Compile Include="routes\views\home.js">
       <SubType>Code</SubType>
     </Compile>
@@ -183,9 +185,10 @@
     <Content Include="templates\emails\test.pug" />
     <Content Include="templates\layouts\default.pug" />
     <Content Include="templates\mixins\flash-messages.pug" />
+    <Content Include="templates\views\signup.pug" />
     <Content Include="templates\views\chat.pug" />
     <Content Include="templates\views\error.pug" />
-    <Content Include="templates\views\index.pug" />
+    <Content Include="templates\views\home.pug" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="models\" />
